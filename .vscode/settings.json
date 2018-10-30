@@ -1,0 +1,29 @@
+{
+    "liveSassCompile.settings.formats":[
+       {
+           "format": "expanded",
+           "extensionName": ".css",
+           "savePath": "app/css"
+       }/*
+       ,
+       {
+           "extensionName": ".min.css",
+           "format": "compressed",
+           "savePath": "dev/css"
+       }
+       */
+   ],
+   "liveSassCompile.settings.excludeList": [
+      "**/node_modules/**",
+      "**/bower_components/**",
+      ".vscode/**"
+   ],
+   "liveSassCompile.settings.generateMap": true,
+   "liveSassCompile.settings.autoprefix": null
+   /*
+   [
+       "> 1%",
+       "last 2 versions"
+   ]
+   */
+}

@@ -1,0 +1,14 @@
+/* Color palette */
+/* Text styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+}
+/*# sourceMappingURL=main.css.map */

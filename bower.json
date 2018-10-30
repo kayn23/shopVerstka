@@ -1,0 +1,20 @@
+{
+  "name": "shopverstka",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "kayn23@yandex.ru"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/kayn23/shopVerstka",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "normalize.css": "^8.0.0"
+  }
+}

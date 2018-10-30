@@ -1,0 +1,30 @@
+/* Color palette */
+$warm-grey: #8c8c8c;
+$black: #212121;
+$brownish-grey: #6c6c6c;
+$tomato: #e53935;
+$dark-sky-blue: #1e88e5;
+$mid-green: #43a047;
+
+/* Text styles */
+@mixin caption-style {
+  font-family: Montserrat;
+  font-size: 36px;
+  font-weight: bold;
+  text-align: left;
+  color: $black;
+}
+@mixin main-text {
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 1.71;
+  text-align: left;
+  color: $brownish-grey;
+}
+
+* {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
