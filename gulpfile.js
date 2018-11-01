@@ -54,5 +54,5 @@ gulp.task('html', ['clean'], function () {
 });
 
 gulp.task('watch', function () {
-    gulp.watch('app/*.pug', ['bower']);
+    gulp.watch('app/*/*/*.pug', ['bower']);
 });
