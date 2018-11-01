@@ -6,6 +6,17 @@
   box-sizing: border-box;
 }
 
+a {
+  text-decoration: none;
+  color: #212121;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
 body {
   font-family: 'Montserrat', sans-serif;
   font-size: 14px;
