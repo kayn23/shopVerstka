@@ -37,6 +37,7 @@
   &-slider {
     font-size: 62px;
     font-weight: 100;
+    line-height: 62px;
     color: $black;
     &-position_topSlider {
       margin-bottom: 34px;
@@ -58,4 +59,15 @@
 .container {
   max-width: 1366px;
   margin: 0 auto;
+}
+
+@media (max-width: 650px){
+  .caption {
+    &-segment {}
+    &-slider {
+      &-position_topSlider {
+        margin-bottom: 15px;
+      }
+    }
+  }
 }

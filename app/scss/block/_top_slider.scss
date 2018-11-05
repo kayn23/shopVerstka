@@ -11,3 +11,13 @@
     padding: 45px 98px 175px;
   }
 }
+
+@media (max-width: 650px){
+  
+  .top_slider {
+    height: 600px;
+    &--item {
+      padding: 45px 49px 75px;
+    }
+  }
+}

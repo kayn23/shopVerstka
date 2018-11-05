@@ -54,6 +54,7 @@ body {
 .caption-slider {
   font-size: 62px;
   font-weight: 100;
+  line-height: 62px;
   color: #212121;
 }
 
@@ -75,6 +76,12 @@ body {
 .container {
   max-width: 1366px;
   margin: 0 auto;
+}
+
+@media (max-width: 650px) {
+  .caption-slider-position_topSlider {
+    margin-bottom: 15px;
+  }
 }
 
 .header {
@@ -209,7 +216,6 @@ body {
 .slider--accent_caprion {
   font-size: 18px;
   font-weight: 700;
-  line-height: 2.67;
   letter-spacing: 1.8px;
 }
 
@@ -223,6 +229,12 @@ body {
 
 .slide_contant {
   max-width: 500px;
+}
+
+@media (max-width: 650px) {
+  .slider--accent_caprion-position_topSlider {
+    margin-bottom: 10px;
+  }
 }
 
 .top_slider {
@@ -239,5 +251,14 @@ body {
   flex-direction: column;
   justify-content: flex-end;
   padding: 45px 98px 175px;
+}
+
+@media (max-width: 650px) {
+  .top_slider {
+    height: 600px;
+  }
+  .top_slider--item {
+    padding: 45px 49px 75px;
+  }
 }
 /*# sourceMappingURL=main.css.map */
