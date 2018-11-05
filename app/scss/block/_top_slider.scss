@@ -1,5 +1,13 @@
-.top_slider{
-    &--item {
-        height: 800px;
-    }
+.top_slider {
+  height: 800px;
+  overflow: hidden;
+  &--container {
+      z-index: 0;
+  }
+  &--item {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 45px 98px 175px;
+  }
 }

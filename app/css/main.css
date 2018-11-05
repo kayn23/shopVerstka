@@ -45,27 +45,31 @@ body {
   transform: scale(0.95);
 }
 
-.caption--segment {
+.caption-segment {
   font-size: 36px;
   font-weight: bold;
-  text-align: left;
   color: #212121;
 }
 
-.caption--slider {
+.caption-slider {
   font-size: 62px;
   font-weight: 100;
-  line-height: 1.16;
-  text-align: left;
   color: #212121;
+}
+
+.caption-slider-position_topSlider {
+  margin-bottom: 34px;
 }
 
 .main_text {
   font-size: 14px;
   font-weight: 300;
   line-height: 1.71;
-  text-align: left;
   color: #6c6c6c;
+}
+
+.main_text-position_topSlider {
+  margin-bottom: 32px;
 }
 
 .container {
@@ -83,6 +87,7 @@ body {
   position: absolute;
   left: 0;
   right: 0;
+  z-index: 10;
 }
 
 .logo {
@@ -201,7 +206,38 @@ body {
   }
 }
 
-.top_slider--item {
+.slider--accent_caprion {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 2.67;
+  letter-spacing: 1.8px;
+}
+
+.slider--accent_caprion-green {
+  color: #43a047;
+}
+
+.slider--accent_caprion-position_topSlider {
+  margin-bottom: 22px;
+}
+
+.slide_contant {
+  max-width: 500px;
+}
+
+.top_slider {
   height: 800px;
+  overflow: hidden;
+}
+
+.top_slider--container {
+  z-index: 0;
+}
+
+.top_slider--item {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 45px 98px 175px;
 }
 /*# sourceMappingURL=main.css.map */
