@@ -491,4 +491,46 @@ body {
     padding: 55px 49px;
   }
 }
+
+.footer {
+  background: #f7f7f7;
+  padding: 120px 98px 30px;
+  color: #6c6c6c;
+}
+
+.footer--copyright {
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 2.17;
+  letter-spacing: 0.6px;
+}
+
+.footer--copy {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.footer--social {
+  width: 130px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer--social-link {
+  width: 28px;
+  height: 28px;
+  color: #ffffff;
+  background: #6c6c6c;
+  border-radius: 50%;
+  display: inline-block;
+  line-height: 30px;
+  overflow: hidden;
+  text-align: center;
+  transition: .3s;
+}
+
+.footer--social-link:hover {
+  transform: scale(1.15);
+}
 /*# sourceMappingURL=main.css.map */

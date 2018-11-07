@@ -1,0 +1,38 @@
+.footer {
+    background: $background-footer;
+    padding: 120px 98px 30px;
+    color: $brownish-grey;
+
+    &--copyright {
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 2.17;
+        letter-spacing: 0.6px;
+    }
+
+    &--copy {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    &--social{
+        width: 130px;
+        display: flex;
+        justify-content: space-between;
+        &-link {
+            width: 28px;
+            height: 28px;
+            color: $white;
+            background: $brownish-grey;
+            border-radius: 50%;
+            display: inline-block;
+            line-height: 30px;
+            overflow: hidden;
+            text-align: center;
+            transition: .3s;
+            &:hover {
+                transform: scale(1.15);
+            }
+        }
+    }
+}
