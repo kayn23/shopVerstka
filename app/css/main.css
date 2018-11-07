@@ -535,6 +535,60 @@ body {
   transform: scale(1.15);
 }
 
+.footer--block {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 1130px) {
+  .footer--block {
+    justify-content: space-around;
+  }
+}
+
+.footer--block-bottomSpace {
+  margin-bottom: 40px;
+}
+
+.footer--form {
+  position: relative;
+}
+
+.footer--email {
+  display: block;
+  width: 100%;
+  border: solid 1px #d9dee1;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 1.6;
+  padding: 11px 20px;
+}
+
+.footer--email:focus {
+  outline: 0;
+}
+
+.footer--button {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 48px;
+  height: 48px;
+  border: 0;
+  background: none;
+  transition: 0.2s;
+}
+
+.footer--button:hover {
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.footer--button:focus {
+  outline: 0;
+}
+
 .footerBlock {
   color: #212121;
 }
@@ -572,12 +626,21 @@ body {
   max-width: 230px;
 }
 
+.footerBlock-rightColumn {
+  max-width: 363px;
+}
+
+.footerBlock-bottomSpace {
+  margin-bottom: 10px;
+}
+
 .userful {
   display: flex;
   max-width: 500px;
 }
 
 .userful--link_block {
+  min-width: 170px;
   width: 50%;
 }
 
@@ -599,9 +662,19 @@ body {
   }
 }
 
+@media (max-width: 775px) {
+  .footerBlock {
+    max-width: none;
+    width: 100% !important;
+  }
+}
+
 @media (max-width: 650px) {
   .footer {
     padding: 75px 49px 30px;
+  }
+  .footer--block {
+    display: block;
   }
 }
 /*# sourceMappingURL=main.css.map */
