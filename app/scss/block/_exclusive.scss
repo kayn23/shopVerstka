@@ -1,17 +1,69 @@
 .exclusive {
-    display: flex;
-    @media (max-width: 683px) {
-        display: block;
-    }
+  display: flex;
+  @media (max-width: 683px) {
+    display: block;
+  }
+  &--border {
+    max-width: 350px;
+  }
 }
 
 .exclusive_card {
-    padding: 50px;
-    width: 50%;
-    height: 683px;
+  padding: 50px;
+  width: 50%;
+  height: 683px;
+  display: flex;
+  align-items: center;
+  @media (max-width: 683px) {
+    width: 100%;
+  }
+}
+
+.exclusive_bot {
+  padding: 0 98px 120px;
+  &--left {
+    background: url("../img/general/exclusive/product-1-lg.jpg") center center
+      no-repeat;
+    width: 570px;
+    height: 570px;
     display: flex;
     align-items: center;
-    @media (max-width: 683px) {
-        width: 100%;
+    padding: 30px;
+
+    @media (max-width: 1335px) {
+      margin-bottom: 15px;
     }
+  }
+
+  &--right {
+    width: 570px;
+    height: 570px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    @media (max-width: 637px) {
+      display: none;
+    }
+  }
+
+  &--card {
+    width: 270px;
+    height: 270px;
+  }
+
+  &-display {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    @media (max-width: 1335px) {
+      justify-content: center;
+    }
+  }
+  .md-15 {
+    margin-bottom: 15px;
+  }
+
+  @media (max-width: 870px) {
+    padding: 0 49px 75px;
+  }
 }
