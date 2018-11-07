@@ -1,0 +1,34 @@
+.mobile {
+  color: $brownish-grey;
+  background: url("../img/general/mobile.jpg") center center no-repeat;
+  padding: 120px 98px;
+  &--content {
+    max-width: 480px;
+  }
+  &--details {
+    font-size: 22px;
+    font-weight: 300;
+    line-height: 1.09;
+    color: $brownish-grey;
+    margin-bottom: 20px;
+  }
+
+  &--button {
+    margin-right: 10px;
+    &:hover img {
+      transform: scale(1.05)
+    }
+    &:active img {
+      transform: scale(0.97)
+    }
+    img {
+      transition: .2s;
+    }
+  }
+}
+
+@media (max-width:650px) {
+  .mobile {
+    padding: 80px 49px;
+  }
+}

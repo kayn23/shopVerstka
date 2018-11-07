@@ -51,6 +51,13 @@
     &-position_topSlider {
       margin-bottom: 34px;
     }
+    &-mobile {
+      text-transform: uppercase;
+      margin-bottom: 20px;
+      @media (max-width:650px) {
+        font-size: 48px;
+      }
+    }
   }
 }
 
@@ -115,6 +122,9 @@
       margin-bottom: 22px;
   }
   &-position_exclusive {
+    margin-bottom: 20px;
+  }
+  &-bottomSpace {
     margin-bottom: 20px;
   }
 }
