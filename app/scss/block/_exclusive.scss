@@ -1,0 +1,17 @@
+.exclusive {
+    display: flex;
+    @media (max-width: 683px) {
+        display: block;
+    }
+}
+
+.exclusive_card {
+    padding: 50px;
+    width: 50%;
+    height: 683px;
+    display: flex;
+    align-items: center;
+    @media (max-width: 683px) {
+        width: 100%;
+    }
+}

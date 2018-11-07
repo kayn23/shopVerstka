@@ -35,6 +35,13 @@
     &:hover {
       color: $black;
     }
+
+    &-black {
+      color: $black;
+    }
+    &-position_exclusive {
+      margin-bottom: 22px;
+    }
   }
   &-slider {
     font-size: 62px;
@@ -54,6 +61,9 @@
   color: $brownish-grey;
   &-position_topSlider {
     margin-bottom: 32px;
+  }
+  &-position_exclusive {
+    margin-bottom: 30px;
   }
 }
 
@@ -88,5 +98,24 @@
         margin-bottom: 15px;
       }
     }
+  }
+}
+
+.accent_caption {
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 1.8px;
+  text-transform: uppercase;
+  &-green {
+      color: $mid-green;
+  }
+  &-blue {
+    color: $dark-sky-blue;
+  }
+  &-position_topSlider {
+      margin-bottom: 22px;
+  }
+  &-position_exclusive {
+    margin-bottom: 20px;
   }
 }
