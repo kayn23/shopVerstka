@@ -1,38 +1,100 @@
 .footer {
-    background: $background-footer;
-    padding: 120px 98px 30px;
+  background: $background-footer;
+  padding: 120px 98px 30px;
+  color: $brownish-grey;
+  font-size: 14px;
+
+  &--copyright {
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 2.17;
+    letter-spacing: 0.6px;
+  }
+
+  &--copy {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  &--social {
+    width: 130px;
+    display: flex;
+    justify-content: space-between;
+    &-link {
+      width: 28px;
+      height: 28px;
+      color: $white;
+      background: $brownish-grey;
+      border-radius: 50%;
+      display: inline-block;
+      line-height: 30px;
+      overflow: hidden;
+      text-align: center;
+      transition: 0.3s;
+      &:hover {
+        transform: scale(1.15);
+      }
+    }
+  }
+}
+
+.footerBlock {
+  color: $black;
+  &--caption {
     color: $brownish-grey;
-
-    &--copyright {
-        font-size: 12px;
-        font-weight: 700;
-        line-height: 2.17;
-        letter-spacing: 0.6px;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.33;
+    letter-spacing: 1.8px;
+    &-bottomSpace {
+      margin-bottom: 24px;
     }
+  }
 
-    &--copy {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
+  &--text {
+    font-weight: 400;
+    line-height: 1.57;
+    &-bottomSpace {
+      margin-bottom: 15px;
     }
-    &--social{
-        width: 130px;
-        display: flex;
-        justify-content: space-between;
-        &-link {
-            width: 28px;
-            height: 28px;
-            color: $white;
-            background: $brownish-grey;
-            border-radius: 50%;
-            display: inline-block;
-            line-height: 30px;
-            overflow: hidden;
-            text-align: center;
-            transition: .3s;
-            &:hover {
-                transform: scale(1.15);
-            }
-        }
+  }
+  &--mailto {
+    color: $brownish-grey;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  &-leftColumn {
+    max-width: 230px;
+  }
+}
+
+.userful {
+  display: flex;
+  max-width: 500px;
+  &--link_block {
+    width: 50%;
+  }
+
+  &--link {
+    display: block;
+    font-weight: 700;
+    line-height: 1.86;
+    letter-spacing: 0.7px;
+    transition: 0.2s;
+    &:hover {
+      transform: scale(1.05);
+    }
+  }
+
+  @media (max-width: 450px) {
+      display: block;
+  }
+}
+
+@media (max-width: 650px) {
+    .footer {
+        padding: 75px 49px 30px;
     }
 }

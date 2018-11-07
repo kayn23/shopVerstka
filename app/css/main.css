@@ -496,6 +496,7 @@ body {
   background: #f7f7f7;
   padding: 120px 98px 30px;
   color: #6c6c6c;
+  font-size: 14px;
 }
 
 .footer--copyright {
@@ -527,10 +528,80 @@ body {
   line-height: 30px;
   overflow: hidden;
   text-align: center;
-  transition: .3s;
+  transition: 0.3s;
 }
 
 .footer--social-link:hover {
   transform: scale(1.15);
+}
+
+.footerBlock {
+  color: #212121;
+}
+
+.footerBlock--caption {
+  color: #6c6c6c;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.33;
+  letter-spacing: 1.8px;
+}
+
+.footerBlock--caption-bottomSpace {
+  margin-bottom: 24px;
+}
+
+.footerBlock--text {
+  font-weight: 400;
+  line-height: 1.57;
+}
+
+.footerBlock--text-bottomSpace {
+  margin-bottom: 15px;
+}
+
+.footerBlock--mailto {
+  color: #6c6c6c;
+}
+
+.footerBlock--mailto:hover {
+  text-decoration: underline;
+}
+
+.footerBlock-leftColumn {
+  max-width: 230px;
+}
+
+.userful {
+  display: flex;
+  max-width: 500px;
+}
+
+.userful--link_block {
+  width: 50%;
+}
+
+.userful--link {
+  display: block;
+  font-weight: 700;
+  line-height: 1.86;
+  letter-spacing: 0.7px;
+  transition: 0.2s;
+}
+
+.userful--link:hover {
+  transform: scale(1.05);
+}
+
+@media (max-width: 450px) {
+  .userful {
+    display: block;
+  }
+}
+
+@media (max-width: 650px) {
+  .footer {
+    padding: 75px 49px 30px;
+  }
 }
 /*# sourceMappingURL=main.css.map */
