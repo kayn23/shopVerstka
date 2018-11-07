@@ -9,7 +9,7 @@ var mySlider = new Swiper ('.js-slider-top',{
       }
     },
     autoplay: {
-      delay: 5000,
+      delay: 10000,
       disableOnInteraction: false,
     }
 });
@@ -25,7 +25,7 @@ var mySlider = new Swiper ('.js-slider-bot',{
     }
   },
   autoplay: {
-    delay: 5000,
+    delay: 10000,
     disableOnInteraction: false,
   }
 });
