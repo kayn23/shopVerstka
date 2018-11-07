@@ -324,7 +324,7 @@ body {
 
 .slider--pagination {
   position: absolute;
-  bottom: 20px;
+  bottom: 20px !important;
   margin: 0 auto;
   text-align: center;
   z-index: 5;
@@ -341,15 +341,14 @@ body {
 
 .swiper-pagination-bullet {
   display: inline-block;
-  width: 30px;
-  height: 30px;
+  width: 28px;
+  height: 28px;
   border-radius: 50%;
   transition: .8s;
 }
 
 .swiper-pagination-bullet-active {
-  width: 36px;
-  height: 36px;
+  transform: scale(1.2);
   background: #212121;
 }
 
