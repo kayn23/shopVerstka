@@ -1,0 +1,33 @@
+.trending {
+  padding: 110px 98px;
+    &--card {
+      display: block;
+      margin-bottom: 20px;
+      width: 370px;
+      height: 370px;
+      transition: .2s;
+      @media (max-width: 935px) {
+        width: 270px;
+        height: 270px;
+      }
+      &:hover {
+        transform: scale(1.05);
+      }
+    }
+
+    .main {
+      display: flex;
+      justify-content: space-between; 
+      flex-wrap: wrap;
+      @media (max-width: 1305px) {
+        justify-content: space-around;
+      }
+      // @media (max-width: 935px) {
+      //   justify-content: space-between
+      // }
+    }
+
+  @media (max-width: 750px) {
+    padding: 55px 49px;
+  }
+}
