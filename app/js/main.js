@@ -1,3 +1,4 @@
+// инициализация первого слайдера
 var mySlider = new Swiper ('.js-slider-top',{
     speed:800,
     loop: true,
@@ -13,7 +14,7 @@ var mySlider = new Swiper ('.js-slider-top',{
       disableOnInteraction: false,
     }
 });
-
+// инициализация второго слайдера
 var mySlider = new Swiper ('.js-slider-bot',{
   speed:800,
   loop: true,
@@ -27,5 +28,16 @@ var mySlider = new Swiper ('.js-slider-bot',{
   autoplay: {
     delay: 10000,
     disableOnInteraction: false,
+  }
+});
+
+//меню
+$('.js-bar').click(function(){
+  $('.js-menu').slideToggle(300);
+});
+
+$(window).resize(function(){
+  if($(window).width() >= 870) {
+    $('.js-menu').css('display','');
   }
 });

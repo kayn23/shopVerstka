@@ -51,8 +51,10 @@
 
 @media (max-width: 870px){
   .nav {
+    display: none;
     &--link {
       display: block;
+      background: rgba(255,255,255,0.4);
       text-align: center;
       border-bottom: 1px solid transparentize($black, 0.95);
       &:hover {
@@ -60,7 +62,7 @@
       }
     }
     &-postion_header_general {
-      position: fixed;
+      position: absolute;
       left:0;
       right: 0;
       top: 95px;
