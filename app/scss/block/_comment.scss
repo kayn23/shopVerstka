@@ -1,0 +1,62 @@
+.comments {
+  padding: 120px 98px;
+}
+.comment {
+  max-width: 800px;
+  &--img {
+    float: left;
+    width: 150px;
+    height: 150px;
+    margin: 22px 10px 15px 0;
+    border-radius: 0 15px 0 15px;
+  }
+  margin-bottom: 20px;
+  &--user {
+    @extend .accent_caption;
+    font-size: 22px;
+  }
+  &--text {
+    @extend .main_text;
+    font-size: 20px;
+  }
+  &::after {
+    content: '';
+    height: 1px;
+    background: #9c9c9c;
+    display: block;
+    width: 100%;
+    clear: both;
+  }
+}
+
+.input {
+  &--name {
+    display: block;
+    width: 500px;
+    padding: 5px 10px;
+    font-size: 20px;
+    border: 1px solid #9c9c9c;
+    border-radius: 10px;
+    margin: 10px 0;
+    &:focus {
+      outline: 0;
+    }
+    &--textarea {
+      height: 225px;
+      resize: none;
+    }
+  }
+
+  &--btn {
+    @extend .btn;
+    border: 0;
+    background: #dcdcdc;
+    &:hover {
+      transform: scale(1.05);
+    }
+    &:active {
+      transform: scale(.97);
+    }
+  }
+  
+}

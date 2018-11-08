@@ -1,0 +1,19 @@
+.comments
+  .comment--out
+    .comment
+      img.comment--img(src="img/comment/user1.jpg", alt="user1")
+      h4.comment--user name
+      p.comment--text Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam, commodi qui 
+        |numquam voluptatem, vitae fuga nostrum odio sed beatae, ab quia cum eaque amet ut?
+    .comment
+      img.comment--img(src="img/comment/user1.jpg", alt="user1")
+      h4.comment--user name
+      p.comment--text Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum iure libero 
+        |sapiente provident vero beatae tenetur aliquid qui ab porro minima nemo odit optio illum dicta 
+        |blanditiis laudantium cumque quos nesciunt harum, veritatis eveniet a totam aperiam! Pariatur rem 
+        |laboriosam nobis corrupti porro fuga, minus quidem cumque molestiae, totam itaque.
+  form(action="",autocomplete="off").comment--input
+    h4.comment--user Добавить комментарий
+    input.input--name(type="text",name="name",placeholder="Введите имя")
+    textarea(placeholder="Сообщение",maxlength="350").input--name.input--name--textarea
+    button.input--btn Отправить

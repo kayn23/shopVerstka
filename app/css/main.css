@@ -27,7 +27,7 @@ body {
   color: black;
 }
 
-.btn {
+.btn, .input--btn {
   display: inline-block;
   border-radius: 22.5px;
   box-shadow: 0px 2px 4.9px 0.2px rgba(33, 33, 33, 0.35);
@@ -40,18 +40,26 @@ body {
   transition: 0.2s;
 }
 
-.btn i {
+.btn i, .input--btn i {
   opacity: 0;
   transition: 0.2s;
   position: relative;
   right: -7px;
 }
 
-.btn:hover i {
+.btn:hover, .input--btn:hover {
+  cursor: pointer;
+}
+
+.btn:hover i, .input--btn:hover i {
   opacity: 1;
 }
 
-.btn:active {
+.btn:focus, .input--btn:focus {
+  outline: 0;
+}
+
+.btn:active, .input--btn:active {
   transform: scale(0.95);
 }
 
@@ -95,7 +103,7 @@ body {
   }
 }
 
-.main_text {
+.main_text, .comment--text {
   font-size: 14px;
   font-weight: 300;
   line-height: 1.71;
@@ -120,7 +128,7 @@ body {
 .exploreAll .arrow {
   opacity: 0;
   padding-left: 12px;
-  transition: .2s;
+  transition: 0.2s;
 }
 
 .exploreAll:hover .arrow {
@@ -138,7 +146,7 @@ body {
   }
 }
 
-.accent_caption {
+.accent_caption, .comment--user {
   font-size: 18px;
   font-weight: 700;
   letter-spacing: 1.8px;
@@ -640,6 +648,72 @@ body {
   .mobile {
     padding: 80px 49px;
   }
+}
+
+.comments {
+  padding: 120px 98px;
+}
+
+.comment {
+  max-width: 800px;
+  margin-bottom: 20px;
+}
+
+.comment--img {
+  float: left;
+  width: 150px;
+  height: 150px;
+  margin: 22px 10px 15px 0;
+  border-radius: 0 15px 0 15px;
+}
+
+.comment--user {
+  font-size: 22px;
+}
+
+.comment--text {
+  font-size: 20px;
+}
+
+.comment::after {
+  content: '';
+  height: 1px;
+  background: #9c9c9c;
+  display: block;
+  width: 100%;
+  clear: both;
+}
+
+.input--name {
+  display: block;
+  width: 500px;
+  padding: 5px 10px;
+  font-size: 20px;
+  border: 1px solid #9c9c9c;
+  border-radius: 10px;
+  margin: 10px 0;
+}
+
+.input--name:focus {
+  outline: 0;
+}
+
+.input--name--textarea {
+  height: 225px;
+  resize: none;
+}
+
+.input--btn {
+  border: 0;
+  background: #dcdcdc;
+}
+
+.input--btn:hover {
+  transform: scale(1.05);
+}
+
+.input--btn:active {
+  transform: scale(0.97);
 }
 
 .footer {

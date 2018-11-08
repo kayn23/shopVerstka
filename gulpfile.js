@@ -31,7 +31,7 @@ gulp.task('css', () =>
 
 //bower
 gulp.task('bower',['pug'], function () {
-    gulp.src('app/index.html')
+    gulp.src('app/*.html')
         .pipe(wiredep({
             directory: "app/lib/bower_components"
         }))
