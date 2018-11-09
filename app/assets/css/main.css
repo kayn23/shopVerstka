@@ -671,6 +671,10 @@ body {
   font-size: 22px;
 }
 
+.comment--user-bottomSpace {
+  margin-bottom: 20px;
+}
+
 .comment--text {
   font-size: 20px;
 }

@@ -14,6 +14,9 @@
   &--user {
     @extend .accent_caption;
     font-size: 22px;
+    &-bottomSpace {
+      margin-bottom: 20px;
+    }
   }
   &--text {
     @extend .main_text;
