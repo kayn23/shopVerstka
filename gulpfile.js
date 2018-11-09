@@ -20,13 +20,13 @@ gulp.task('pug', function () {
 
 // CSS
 gulp.task('css', () =>
-    gulp.src('dev/scss/style.scss')
+    gulp.src('app/scss/main.scss')
         .pipe(sass())
         .pipe(autoprefixer({
             browsers: ['last 15 versions'],
             cascade: false
         }))
-        .pipe(gulp.dest('./dev/css'))
+        .pipe(gulp.dest('./dist'))
 );
 
 //bower
@@ -40,17 +40,28 @@ gulp.task('bower',['pug'], function () {
 
 // clean
 gulp.task('clean', function () {
-    return gulp.src('prod/', { read: false })
+    return gulp.src('dist/', { read: false })
         .pipe(clean());
 });
 
+//img
+gulp.task('img', function() {
+    return gulp.src('app/img/**/*')
+        .pipe(gulp.dest('dist/img/'));
+});
+
+//js 
+gulp.task('js', function(){
+    return gulp.src('app/js/')
+});
+
 // Prod
-gulp.task('html', ['clean'], function () {
-    return gulp.src('dev/*.html')
+gulp.task('html', function () {
+    return gulp.src('app/*.html')
         .pipe(useref())
         .pipe(gulpif('*.js', uglify()))
         .pipe(gulpif('*.css', minifyCss()))
-        .pipe(gulp.dest('prod/'));
+        .pipe(gulp.dest('dist/'));
 });
 
 gulp.task('watch', function () {
