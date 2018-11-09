@@ -103,6 +103,10 @@ body {
   }
 }
 
+.caption-slider-catalog {
+  margin-top: 100px;
+}
+
 .main_text, .comment--text {
   font-size: 14px;
   font-weight: 300;
@@ -177,6 +181,10 @@ body {
   padding: 45px 98px 0;
   max-width: 1366px;
   margin: 0 auto;
+}
+
+.header-catalog {
+  background: #f7f7f7;
 }
 
 .position_header_general {
@@ -718,6 +726,22 @@ body {
 
 .input--btn:active {
   transform: scale(0.97);
+}
+
+.catalog {
+  padding: 120px 98px;
+}
+
+.products--card {
+  width: 370px;
+  height: 370px;
+  margin-bottom: 20px;
+}
+
+.products-flex {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .footer {

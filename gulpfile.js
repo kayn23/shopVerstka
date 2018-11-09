@@ -46,8 +46,8 @@ gulp.task('clean', function () {
 
 //img
 gulp.task('img', function() {
-    return gulp.src('app/img/**/*')
-        .pipe(gulp.dest('dist/img/'));
+    return gulp.src('app/assets/img/**/*')
+        .pipe(gulp.dest('dist/assets/img/'));
 });
 
 //js 

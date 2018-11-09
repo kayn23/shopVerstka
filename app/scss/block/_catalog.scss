@@ -1,0 +1,17 @@
+.catalog {
+  padding: 120px 98px;
+}
+
+.products {
+  &--card {
+    width: 370px;
+    height: 370px;
+    margin-bottom: 20px;
+  }
+
+  &-flex {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+}

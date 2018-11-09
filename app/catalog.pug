@@ -4,7 +4,17 @@ html(lang="ru")
   title= "Каталог"
   body
     .container
-      include pug_modul/header
-
+      header
+        .header.header-catalog
+          a.logo(href="index.html")
+          include pug_modul/hum
+          nav.nav.nav-postion_header_general.js-menu
+            a.nav--link(href="index.html") Home
+            a.nav--link(href="products.html") Products
+            a.nav--link(href="history.html") History
+            a.nav--link(href="showroom.html") Showroom
+            a.nav--link(href="contact.html") Contact
+          h1.caption-slider.caption-slider-catalog Catalog
+      include pug_modul/catalog
       include pug_modul/footer
     include pug_modul/script
